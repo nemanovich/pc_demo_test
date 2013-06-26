@@ -14,6 +14,5 @@ class LoginPage
     self.login_element.value = username
     self.pass_element.value = password
     submit
-  end
-
+    end
 end

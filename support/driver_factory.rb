@@ -3,10 +3,6 @@ class DriverFactory
   include Singleton
   attr_reader :default_driver
 
-  def initialize
-    #init_default_browser
-  end
-
   def init_default_browser
     @default_driver = Selenium::WebDriver.for(:firefox)
     @default_driver.manage.timeouts.implicit_wait = 10
