@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'rspec'
 require 'selenium-webdriver'
 require 'page-object'
