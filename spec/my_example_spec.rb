@@ -1,16 +1,14 @@
 # encoding: utf-8
 require_relative '../spec_helper'
+require_relative '../page/home_page'
 
-describe 'My behaviour' do
+describe 'login' do
   before(:all) do
-    login_page = LoginPage.new(DriverFactory.driver, true)
-    puts $admin[:login]
-    login_page.login($admin[:login], $admin[:pass])
+    login $admin
   end
+  let(:home_page) {HomePage.new(DriverFactory.driver)}
 
-  it 'should do something' do
-
-    #To change this template use File | Settings | File Templates.
-    true.should == false
+  it 'welcome label' do
+    home_page.welcome_element.text.should == 'WELCOME, ADMIN (ADMINISTRATORS)'
   end
 end

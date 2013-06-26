@@ -8,6 +8,7 @@ require 'ryba'
 require 'logger'
 require 'yaml'
 require_relative 'support/driver_factory'
+require_relative 'support/common_functions'
 require_relative 'page/login_page'
 
 def read_config

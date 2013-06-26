@@ -1,2 +1,2 @@
 base_url: 'http://forwardsoft.ru/ecargoworld/'
-admin: {login: '1', pass: '2'}
+admin: { login: 'admin', pass: 'ecargo' }

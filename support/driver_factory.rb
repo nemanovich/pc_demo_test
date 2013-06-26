@@ -4,12 +4,12 @@ class DriverFactory
   attr_reader :default_driver
 
   def initialize
-    init_default_browser
+    #init_default_browser
   end
 
   def init_default_browser
-    @default_driver = Selenium::WebDriver.for(:firefox, :profile => "default")
-    @default_driver.manage.timeouts.implicit_wait = 0
+    @default_driver = Selenium::WebDriver.for(:firefox)
+    @default_driver.manage.timeouts.implicit_wait = 10
     @default_driver.manage.delete_all_cookies
   end
 
