@@ -10,18 +10,10 @@ require 'yaml'
 require_relative 'support/driver_factory'
 require_relative 'support/common_functions'
 
-def read_config
-  config = YAML.load_file('config.yml')
-  $admin = config['admin']
-end
-
-read_config
-FileUtils::mkdir_p('logs') unless FileTest::directory?('logs')
-$log = Logger.new ('logs//tests.log')
-
 RSpec.configure do |config|
   config.before(:all) do
     DriverFactory.init_default_browser
+    DriverFactory.driver.manage.window.maximize
   end
 
   config.after(:all) do
