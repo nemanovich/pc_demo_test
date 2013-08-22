@@ -1,4 +1,6 @@
 # encoding: utf-8
+require 'singleton'
+
 class DriverFactory
   include Singleton
   attr_reader :default_driver
@@ -9,12 +11,8 @@ class DriverFactory
     @default_driver.manage.delete_all_cookies
   end
 
-  def self.init_default_browser
-    quit unless instance.default_driver.nil?
-    instance.init_default_browser
-  end
-
   def self.driver
+    instance.init_default_browser if instance.default_driver.nil?
     instance.default_driver
   end
 

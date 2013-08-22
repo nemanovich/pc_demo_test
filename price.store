@@ -1,0 +1,11 @@
+---
+price:
+- :token: 660390720c8aasdfasdfsdad4a8d4f36f
+  :goods:
+  - http://test.ru/goods/16924499-1243
+  - http://test.ru/goods/16924532-asdf
+
+- :token: 66asdfasdfasdfasdfasdfasdfasdfa6f
+  :goods:
+  - http://test.ru/goods/16924499-1243
+  - http://test.ru/goods/16924532-asdf

@@ -18,6 +18,7 @@ GEM
       watir-webdriver (>= 0.6.4)
     page_navigation (0.9)
       data_magic (>= 0.14)
+    rake (0.9.6)
     rspec (2.14.0.rc1)
       rspec-core (= 2.14.0.rc1)
       rspec-expectations (= 2.14.0.rc1)
@@ -46,6 +47,7 @@ PLATFORMS
 
 DEPENDENCIES
   page-object (~> 0.8.10)
+  rake
   rspec (~> 2.14.0.rc1)
   russian
   ryba

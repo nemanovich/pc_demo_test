@@ -6,9 +6,12 @@ require 'russian'
 require 'vydumschik'
 require 'ryba'
 require 'logger'
-require 'yaml'
+require 'yaml/store'
+require_relative 'support/const'
 require_relative 'support/driver_factory'
 require_relative 'support/common_functions'
+require_relative 'support/price_loader'
+require_relative 'page/edit_product_page'
 
 def read_config
   config = YAML.load_file('config.yml')

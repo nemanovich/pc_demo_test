@@ -6,5 +6,6 @@ group :development, :test do
   gem 'ryba'
   gem 'vydumschik'
   gem 'russian'
+  gem 'rake'
 
 end

@@ -1,2 +1,1 @@
-base_url: 'http://www.pulscen.ru/'
-admin: { login: 'admin', pass: '******' }
+base_url: 'http://www.test-pulscen.ru/'
