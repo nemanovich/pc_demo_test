@@ -19,8 +19,11 @@ def read_config
 end
 
 read_config
-FileUtils::mkdir_p('logs') unless FileTest::directory?('logs')
-$log = Logger.new ('logs//tests.log')
+#FileUtils::mkdir_p('logs') unless FileTest::directory?('logs')
+$log = Logger.new('main.log')
+$log.formatter = proc do |severity, datetime, progname, msg|
+     "#{datetime}: #{msg}\n"
+  end
 
 RSpec.configure do |config|
   config.before(:all) do
