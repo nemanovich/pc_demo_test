@@ -3,6 +3,6 @@
 class EditProductPage
   include PageObject
 
-  button(:submit, id: 'product_submit')
+  button(:submit, name: 'commit')
 
 end
