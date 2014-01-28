@@ -12,8 +12,6 @@ task :update_goods do
         Product.new(product_url).actualize
       end
     end
-  rescue StandardError => e
-    $log.fatal('ОШИБКА: Обновление товаров завершено неуспешно c ошибкой ' + e)
   ensure
     DriverFactory.quit
   end

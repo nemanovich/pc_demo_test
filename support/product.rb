@@ -12,7 +12,5 @@ class Product
     name = edit_page.name
     edit_page.submit
     $log.info("ОК: #{@url} #{name}")
-  rescue
-    $log.error("ОШИБКА: #{@url} #{name}")
   end
 end

@@ -6,7 +6,9 @@ class DriverFactory
   attr_reader :default_driver
 
   def init_default_browser
-    @default_driver = Selenium::WebDriver.for(:firefox)
+    profile = Selenium::WebDriver::Firefox::Profile.new
+    profile["javascript.enabled"] = false
+    @default_driver = Selenium::WebDriver.for(:firefox, :profile => profile)
     @default_driver.manage.timeouts.implicit_wait = 10
     @default_driver.manage.delete_all_cookies
   end
