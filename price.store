@@ -1,11 +1,5 @@
 ---
 price:
-- :token: 660390720c8aasdfasdfsdad4a8d4f36f
+- :token: 660390720c8a25200c8b73d4a8d4f36f
   :goods:
-  - http://test.ru/goods/16924499-1243
-  - http://test.ru/goods/16924532-asdf
-
-- :token: 66asdfasdfasdfasdfasdfasdfasdfa6f
-  :goods:
-  - http://test.ru/goods/16924499-1243
-  - http://test.ru/goods/16924532-asdf
+  - http://test23.test-pulscen.ru/goods/20619415-vsozdaniye_tovara_ili_uslugi
